@@ -6,7 +6,8 @@
 using namespace std;
 /* Enum to include integer and constant 
 data and to follow core guideline.*/
-enum optiones{value,add,fetch,Quit,muxmum_input=100};
+enum optiones{value,add,fetch,Quit};
+constexpr int muxmum_input=100;
 /* create a class to include  information 
 from user and save that in array and print it*/
 class application
@@ -14,9 +15,9 @@ class application
    public:
     int id=value,i=value;
     //array for names
-    array<string,100>names;
+    array<string,muxmum_input>names;
     //array for ages
-    array<int,100>ages;
+    array<int,muxmum_input>ages;
     //function to print options
     void print_menu()
     {
